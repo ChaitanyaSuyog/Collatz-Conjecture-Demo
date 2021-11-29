@@ -30,7 +30,7 @@ public class Main {
                     if (integer == 1) {
                         integer = 1;
                         conjectureReach(integer);
-                    } else if (integer % 2 != 0 && integer != 1) {
+                    } else if (integer % 2 != 0) {
                         integer = (integer * 3) + 1;
                         System.out.println(integer);
                     } else {
@@ -60,7 +60,8 @@ public class Main {
         String[] no = {"no", "n"};
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("The integer has reached or is at the conjecture, " + integer);
+        System.out.println();
+        System.out.println("The integer has reached or is at the conjecture, i.e. " + integer);
         System.out.println("Would you like to continue iterating?");
         String reply = scan.nextLine().toLowerCase();
 
@@ -94,7 +95,7 @@ public class Main {
             Desktop.getDesktop().browse(new URI("https://www.youtube.com/watch?v=094y1Z2wpJg"));
         }
         else {
-            System.out.println("Please say \"yes\" or \"no\". Don't test my patience, now run me all over again.");
+            System.out.println("Please say \"yes\" or \"no\".");
         }
     }
 }
