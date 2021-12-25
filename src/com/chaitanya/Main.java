@@ -82,17 +82,20 @@ public class Main {
                 System.out.println("You were smart. Here-> watch Veritasium's video.");
                 Thread.sleep(3000);
                 Desktop.getDesktop().browse(new URI("https://www.youtube.com/watch?v=094y1Z2wpJg"));
+                System.exit(1);
             }
             else {
                 System.out.println("Why do you want to confuse your beloved PC like this? Satisfy your curiosity by watching this video.");
                 Thread.sleep(3000);
                 Desktop.getDesktop().browse(new URI("https://www.youtube.com/watch?v=dQw4w9WgXcQ"));
+                System.exit(1);
             }
         }
         else if (Arrays.stream(no).toList().contains(reply)) {
             System.out.println("No probs, satisy your curiosity watching Veritasium's video. Here->");
             Thread.sleep(3000);
             Desktop.getDesktop().browse(new URI("https://www.youtube.com/watch?v=094y1Z2wpJg"));
+            System.exit(1);
         }
         else {
             System.out.println("Please say \"yes\" or \"no\".");
